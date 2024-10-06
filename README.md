@@ -75,7 +75,7 @@ The player movement is handled by the `PlayerMovement` script. Here’s a brief 
 
 ## License
 
-This project is licensed under a custom license - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE) for more details.
 
 ## Contributing
 
