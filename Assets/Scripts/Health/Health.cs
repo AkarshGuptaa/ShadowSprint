@@ -10,11 +10,18 @@ public class Health : MonoBehaviour
     private Animator anim;
     private bool dead;
 
+    [Header("Components")]
+    [SerializeField] private Behaviour[] components;
+    private bool invulnerable;
     
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
     [SerializeField] private float numberOfFlashes;
     private SpriteRenderer spriteRend;
+    
+    [Header("Sounds")]
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField] private AudioClip hurtSound;
     
     private void Awake()
     {
@@ -31,6 +38,7 @@ public class Health : MonoBehaviour
         {
             anim.SetTrigger("hurt");
             StartCoroutine(Invunerability());
+            SoundManager.instance.PlaySound(hurtSound);
         }
         else
         {
@@ -38,18 +46,15 @@ public class Health : MonoBehaviour
             {
                 anim.SetTrigger("die");
                 
-                //Player
-                if (GetComponent<PlayerMovement>() != null)
-                    GetComponent<PlayerMovement>().enabled = false;
+                foreach (Behaviour component in components)
+                {
+                    component.enabled = false;
+                }
                 
-                //Enemy
-                if (GetComponent<EnemyPatrol>() != null)
-                    GetComponentInParent<EnemyPatrol>().enabled = false;
-                
-                if (GetComponent<meleeEnemy>() != null)
-                    GetComponent<meleeEnemy>().enabled = false;
-                
+                anim.SetBool("grounded", true);
+                anim.SetTrigger("die");
                 dead = true;
+                SoundManager.instance.PlaySound(deathSound);
             }
         }
     }
@@ -57,6 +62,18 @@ public class Health : MonoBehaviour
     public void addHealth(float _value)
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
+    }
+
+    public void Respawn()
+    {
+            addHealth(startingHealth);
+            anim.ResetTrigger("die");
+            anim.Play("idle");
+            StartCoroutine(Invunerability());
+
+            //Activate all attached component classes
+            foreach (Behaviour component in components)
+                component.enabled = true;
     }
 
     private IEnumerator Invunerability()

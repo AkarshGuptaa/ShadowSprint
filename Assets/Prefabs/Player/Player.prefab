@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 7989047694482833985}
   - component: {fileID: 757273273225373840}
   - component: {fileID: 4097407867983505519}
+  - component: {fileID: 1222388733810611078}
   - component: {fileID: 3357421227759805435}
   - component: {fileID: 2750634398410157203}
   - component: {fileID: 7031648680824073610}
@@ -214,6 +215,20 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
+  jumpSound: {fileID: 0}
+--- !u!114 &1222388733810611078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4299418740125346943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f00a1e51a75e0bf48a266ce9ddd980e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpointSound: {fileID: 8300000, guid: dfd11627f189146469dcddfa0a2eb193, type: 3}
 --- !u!114 &3357421227759805435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,6 +254,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  fireballSound: {fileID: 8300000, guid: a6ec5ac53c0645746810bc68d0bff27f, type: 3}
 --- !u!114 &2750634398410157203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,8 +268,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  components: []
   iFramesDuration: 1
   numberOfFlashes: 3
+  deathSound: {fileID: 8300000, guid: 2edfdf532c04e92429e9a03c811c593d, type: 3}
+  hurtSound: {fileID: 8300000, guid: 15ddbb09a8d25ec4e97f8d30bc19c7ba, type: 3}
 --- !u!95 &7031648680824073610
 Animator:
   serializedVersion: 5
