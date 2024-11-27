@@ -1,4 +1,4 @@
-# Shadow Sprint 2D
+![Title]([https://github.com/AkarshGuptaa/ShadowSprint/blob/main/Assets/Sprites/title.png])
 
 This is a 2D platformer game built in Unity that allows the player to move horizontally, jump, and perform wall jumps. The game integrates smooth movement mechanics, animations, and interactive physics using Unity's `Rigidbody2D` and `Animator`.
 
