@@ -41,7 +41,16 @@ This 2D platformer game features smooth, responsive movement mechanics where pla
    - Players can jump while grounded or execute wall jumps when in contact with a wall.
    - Wall jumping involves sticking to the wall and jumping in the opposite direction with varied force depending on input.
 
+
 ![P1](https://github.com/AkarshGuptaa/ShadowSprint/blob/main/Assets/Sprites/p1.png)
+
+![P2](https://github.com/AkarshGuptaa/ShadowSprint/blob/main/Assets/Sprites/p2.png)
+
+![P3](https://github.com/AkarshGuptaa/ShadowSprint/blob/main/Assets/Sprites/p3.png)
+
+![P4](https://github.com/AkarshGuptaa/ShadowSprint/blob/main/Assets/Sprites/p4.png)
+
+
 
 ## Development
 
