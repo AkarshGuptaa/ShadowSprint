@@ -1,4 +1,4 @@
-[![Title](https://github.com/AkarshGuptaa/ShadowSprint/tree/main/Assets/Sprites)
+![Title](https://github.com/AkarshGuptaa/ShadowSprint/tree/main/Assets/Sprites)
 
 This is a 2D platformer game built in Unity that allows the player to move horizontally, jump, and perform wall jumps. The game integrates smooth movement mechanics, animations, and interactive physics using Unity's `Rigidbody2D` and `Animator`.
 
