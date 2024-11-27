@@ -2,17 +2,6 @@
 
 This is a 2D platformer game built in Unity that allows the player to move horizontally, jump, and perform wall jumps. The game integrates smooth movement mechanics, animations, and interactive physics using Unity's `Rigidbody2D` and `Animator`.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Controls](#controls)
-- [Installation](#installation)
-- [Gameplay](#gameplay)
-- [Development](#development)
-- [License](#license)
-- [Contributing](#contributing)
-
 ## Introduction
 
 This 2D platformer game features smooth, responsive movement mechanics where players can navigate levels by running, jumping, and wall jumping. The game also has proper animation handling for player actions like running and jumping. The goal is to traverse the platformer environment while avoiding obstacles and mastering the player's movement capabilities.
@@ -51,6 +40,7 @@ This 2D platformer game features smooth, responsive movement mechanics where pla
    - The player can move left or right, and the character’s sprite will flip accordingly.
    - Players can jump while grounded or execute wall jumps when in contact with a wall.
    - Wall jumping involves sticking to the wall and jumping in the opposite direction with varied force depending on input.
+![P1](https://github.com/AkarshGuptaa/ShadowSprint/blob/main/Assets/Sprites/p1.png)
 
 ## Development
 
