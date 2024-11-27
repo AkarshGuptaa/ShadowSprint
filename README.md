@@ -40,6 +40,7 @@ This 2D platformer game features smooth, responsive movement mechanics where pla
    - The player can move left or right, and the character’s sprite will flip accordingly.
    - Players can jump while grounded or execute wall jumps when in contact with a wall.
    - Wall jumping involves sticking to the wall and jumping in the opposite direction with varied force depending on input.
+
 ![P1](https://github.com/AkarshGuptaa/ShadowSprint/blob/main/Assets/Sprites/p1.png)
 
 ## Development
